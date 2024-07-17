@@ -1,0 +1,73 @@
+/* Styles for the .project class */
+.project1 {
+    width: 100%;
+    height: 25vh;
+    border-bottom: 1px solid rgb(201, 201, 201);
+    cursor: pointer;
+    transition: all 0.2s linear;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.project1 h2 {
+    font-size: 3vw;
+    color: black;
+    font-weight: 500;
+    line-height: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.2s linear;
+    font-family: "Darker Grotesque", sans-serif;
+    letter-spacing: 2px;
+}
+
+.project1 h6 {
+    font-size: 1.3vw;
+    color: black;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.2s linear;
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
+}
+
+.project1 text {
+    background-color: #000;
+    -webkit-background-clip: text;
+    font-weight: 500;
+    font-family: "Darker Grotesque", sans-serif;
+    letter-spacing: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: transparent;
+    font-size: 4.2vw;
+    line-height: 1;
+    transition: all 0.2s linear;
+}
+
+.project1:hover {
+    opacity: 0.4;
+}
+
+.project1:hover h2 {
+    transform: translateX(20px);
+
+}
+
+.project1:hover h6 {
+    transform: translateX(20px);
+    font-family: "Inter", sans-serif;
+}
+
+.project1:hover text {
+    transform: translateX(-20px);
+}

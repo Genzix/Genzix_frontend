@@ -1,0 +1,35 @@
+input {
+    height: 15vh;
+    width: 100%;
+    padding: 20px 40px;
+    background: #EDE9E3;
+    border: 1px solid #000;
+    border-radius: 100px;
+    font-size: 2vw;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 2px;
+    font-weight: 200;
+    outline: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input::placeholder {
+    color: #8F8D8D;
+    font-size: 2vw;
+    text-transform: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    input {
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    input {
+        font-size: 4vw;
+    }
+}
