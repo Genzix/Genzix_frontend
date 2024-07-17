@@ -1,0 +1,112 @@
+.button {
+    height: 4vh;
+    width: 14vw;
+    background-color: #EDE9E3;
+    border-radius: 2vh;
+    cursor: pointer;
+    overflow: hidden;
+
+    .slider {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        border-radius: 2vh;
+
+        .el {
+            height: 100%;
+            width: 100%;
+            background-color: #EDE9E3;
+            border-radius: 2vh;
+            font-size: 1.5vw;
+            border: 1px solid #000000;
+
+            &:nth-of-type(2) {
+                position: absolute;
+                background-color: #EDE9E3;
+                border-radius: 2vh;
+                border: 0px solid #000000;
+                top: 100%;
+            }
+
+            &:hover {
+                .perspectiveText {
+                    transform: rotateX(90deg);
+
+                    div {
+                        &:nth-of-type(1) {
+                            transform: translateY(-100%);
+                            opacity: 0;
+                        }
+
+                        &:nth-of-type(2) {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.perspectiveText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+
+    div {
+        transition: all 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+        pointer-events: none;
+        text-transform: uppercase;
+
+        &:nth-of-type(2) {
+            position: absolute;
+            transform-origin: bottom center;
+            transform: rotateX(-90deg) translateY(9px);
+            opacity: 0;
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .button {
+        width: 14vw;
+
+        .slider {
+            .el {
+                font-size: 2.5vw;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .button {
+        width: 14vw;
+
+        .slider {
+            .el {
+                font-size: 2.6vw;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .button {
+        width: 25vw;
+
+        .slider {
+            .el {
+                font-size: 3.7vw;
+            }
+        }
+    }
+}

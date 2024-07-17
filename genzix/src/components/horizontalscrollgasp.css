@@ -1,0 +1,141 @@
+/* Global CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden; /* Prevent horizontal overflow on the body */
+}
+
+.container {
+  display: flex;
+  overflow-x: hidden; /* Hide horizontal overflow */
+  background: black;
+}
+
+.panel {
+  min-width: 100%; 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.firstContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+}
+
+.lastContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background: black;
+}
+
+.lastContainercontainer {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100vh;
+  justify-content: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.red {
+  background: red;
+}
+
+.orange {
+  background: orange;
+}
+
+.purple {
+  background: purple;
+}
+
+.blue {
+  background-color: black;
+}
+
+.containerhalf {
+  height: 50vh;
+  width: 90vw;
+  margin-left: 5%;
+  margin-right: 5%;
+  position: relative;
+}
+
+.containerhalf2 {
+  height: 45vh;
+  width: 45vw;
+  background-color: rgba(20, 20, 20, 0.85);
+  border-radius: 4vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.testmonials {
+  height: 55vh;
+  width: 24%;
+  border-radius: 40px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.testmonials::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 152, 111, 0.2), #000000);
+  border-radius: 40px;
+  z-index: -1;
+  clip-path: circle(7% at 50% 85%);
+  transition: clip-path 1s ease;
+}
+
+.testmonials:hover::before {
+  clip-path: circle(100%);
+  overflow: hidden;
+}
+
+.image {
+  height: 7vh;
+  width: auto;
+  position: absolute;
+  top: 2.5vw;
+  left: 1.5vw;
+}
+
+.circle {
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  right: -25px;
+}
+
+@media only screen and (max-width: 480px)  {
+  .circle{
+    height: 100px;
+    width: 100px;
+    top: -20px;
+    right: -20px;
+  }
+}

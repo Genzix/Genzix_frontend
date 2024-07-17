@@ -1,0 +1,39 @@
+.main {
+    position: relative;
+    height: 100vh;
+    background-color: black;
+  }
+  
+  .body,
+  .mask {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #afa18f;
+    font-size: 64px;
+    line-height: 66px;
+    cursor: default;
+  }
+  
+  span {
+    color: #ec4e39;
+  }
+  
+  p {
+    width: 1000px;
+  }
+  
+  .mask {
+    z-index: 2; 
+    mask-image: url(../components/assets/Ellipse.svg);
+    background-color: #ec4e39;
+    mask-repeat: no-repeat;
+    mask-size: 40px;
+    color: black;
+  }
+  

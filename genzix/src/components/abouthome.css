@@ -1,0 +1,233 @@
+.marquee-container {
+    overflow: hidden;
+}
+
+.innovation {
+    font-size: 20vh;
+    color: black;
+    white-space: nowrap;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Darker Grotesque", sans-serif;
+    /* animation: marquee 22s linear infinite; */
+    letter-spacing: 2px;
+    line-height: 1;
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+     user-select: none;
+}
+
+
+.about2 {
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    color: #000;
+    text-transform: uppercase;
+    font-family: "Darker Grotesque", sans-serif;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.about {
+    margin-top: 3%;
+    font-size: 1.5vw;
+    color: #000;
+    text-transform: uppercase;
+    font-family: "Darker Grotesque", sans-serif;
+    line-height: 1;
+    letter-spacing: 4px;
+    font-weight: 800;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.aboutfotter {
+    font-size: 1vw;
+    color: grey;
+    text-transform: uppercase;
+    font-family: "Darker Grotesque", sans-serif;
+    line-height: 1;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.abouthome {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 2px;
+}
+
+.abouthomebox {
+    font-size: 1.2vw;
+    line-height: 1;
+    color: #ffffff;
+    font-family: "Darker Grotesque", sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.para {
+    width: 100%;
+    font-size: 12px;
+    text-align: justify;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.para2 {
+    width: 100%;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    text-align: justify;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+
+.para3 {
+    width: 100%;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    text-align: justify;
+    color: #000;
+    margin-top: 2%;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.about1 {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+    font-family: "Darker Grotesque", sans-serif;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.para1 {
+    margin-top: 5px;
+    font-size: 10px;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    color: black;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.para4 {
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    text-align: justify;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.para5 {
+    font-size: 1vw;
+    font-family: "Inter", sans-serif;
+    text-align: justify;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.why {
+    font-size: 4.2vw;
+    color: #000;
+    font-weight: normal;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: "Darker Grotesque", sans-serif;
+    line-height: 1;
+}
+
+.char {
+    transform: translateY(115px);
+    transition: transform 0.5s;
+}
+
+.space {
+    margin-right: 1.2vw;
+
+}
+
+.space1 {
+    margin-right: 60px;
+    /* Adjust as needed */
+}
+
+.gradient-text {
+    background-color: #FFCF96;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: "Darker Grotesque", sans-serif;
+    line-height: 1;
+}
+
+
+
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200) {
+    .why {
+        font-size: 22vw;
+        letter-spacing: 0.5px;
+    }
+
+    .para3 {
+        font-size: 16px;
+    }
+    .about{
+        font-size: 10.5vw;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .why {
+        font-size: 12vw;
+        letter-spacing: 0.5px;
+    }
+    .about{
+        font-size: 3.5vw;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .about1 {
+        margin-top: 7px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        letter-spacing: 3px;
+    }
+
+    .para3 {
+        font-size: 10px;
+    }
+
+    .about2 {
+        font-size: 16px;
+    }
+}
